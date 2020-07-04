@@ -7,10 +7,10 @@ import UIKit
 class CustomListCell: ItemListCell {
     
     private func defaultListContentConfiguration() -> UIListContentConfiguration { return .subtitleCell() }
-    private lazy var listContentView = UIListContentView(configuration: defaultListContentConfiguration())
+    lazy var listContentView = UIListContentView(configuration: defaultListContentConfiguration())
     
-    private let categoryIconView = UIImageView()
-    private let categoryLabel = UILabel()
+    let categoryIconView = UIImageView()
+    let categoryLabel = UILabel()
     private var customViewConstraints: (categoryLabelLeading: NSLayoutConstraint,
                                         categoryLabelTrailing: NSLayoutConstraint,
                                         categoryIconTrailing: NSLayoutConstraint)?
@@ -47,9 +47,7 @@ class CustomListCell: ItemListCell {
         customViewConstraints = constraints
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    required init?(coder: NSCoder) { fatalError() }
     
     override func updateConfiguration(using state: UICellConfigurationState) {
         

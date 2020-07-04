@@ -14,7 +14,8 @@ private enum Section: Hashable {
 class CustomCellListViewController: UIViewController {
     
     private var dataSource: UICollectionViewDiffableDataSource<Section, Item>! = nil
-    private var collectionView: UICollectionView! = nil
+    private(set) var collectionView: UICollectionView! = nil
+    lazy var items: [Item] = Item.all
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +57,7 @@ extension CustomCellListViewController {
         // initial data
         var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
         snapshot.appendSections([.main])
-        snapshot.appendItems(Item.all)
+        snapshot.appendItems(items)
         dataSource.apply(snapshot, animatingDifferences: false)
     }
 }

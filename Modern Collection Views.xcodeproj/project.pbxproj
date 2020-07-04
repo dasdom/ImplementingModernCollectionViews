@@ -61,6 +61,8 @@
 		F22F5D1C24B06271000A90EF /* ItemListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F5D1B24B06271000A90EF /* ItemListCell.swift */; };
 		F22F5D1E24B062ED000A90EF /* CustomListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F5D1D24B062ED000A90EF /* CustomListCell.swift */; };
 		F22F5D2024B06599000A90EF /* UICellConfigurationStateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22F5D1F24B06598000A90EF /* UICellConfigurationStateExtension.swift */; };
+		F247630524B06C21001FEFFC /* CustomCellListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F247630424B06C21001FEFFC /* CustomCellListViewControllerTests.swift */; };
+		F247630824B07044001FEFFC /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F247630724B07044001FEFFC /* ItemTests.swift */; };
 		FD000CBA22F0E68100AE3B95 /* TableViewEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD000CB922F0E68100AE3B95 /* TableViewEditingViewController.swift */; };
 		FD09E6D42276BC250009D23B /* SectionHeadersFootersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD09E6D32276BC250009D23B /* SectionHeadersFootersViewController.swift */; };
 		FD09E6D62276BF030009D23B /* PinnedSectionHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD09E6D52276BF030009D23B /* PinnedSectionHeaderFooterViewController.swift */; };
@@ -103,6 +105,16 @@
 		FDD8A181226FB1B300CA5179 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8A180226FB1B300CA5179 /* GridViewController.swift */; };
 		FDEAF76124889A1F00C9AE07 /* EmojiExplorerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAF76024889A1F00C9AE07 /* EmojiExplorerListViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F24762FF24B06BE6001FEFFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDA8D12F225F8531000127E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDA8D136225F8531000127E1;
+			remoteInfo = "Modern Collection Views";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		053A00A722837E6E00C5D56F /* Modern Collection Views Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Modern Collection Views Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +176,10 @@
 		F22F5D1B24B06271000A90EF /* ItemListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListCell.swift; sourceTree = "<group>"; };
 		F22F5D1D24B062ED000A90EF /* CustomListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListCell.swift; sourceTree = "<group>"; };
 		F22F5D1F24B06598000A90EF /* UICellConfigurationStateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICellConfigurationStateExtension.swift; sourceTree = "<group>"; };
+		F24762FA24B06BE6001FEFFC /* ModernCollectionViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModernCollectionViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F24762FE24B06BE6001FEFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F247630424B06C21001FEFFC /* CustomCellListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellListViewControllerTests.swift; sourceTree = "<group>"; };
+		F247630724B07044001FEFFC /* ItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
 		FD000CB922F0E68100AE3B95 /* TableViewEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewEditingViewController.swift; sourceTree = "<group>"; };
 		FD09E6D32276BC250009D23B /* SectionHeadersFootersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeadersFootersViewController.swift; sourceTree = "<group>"; };
 		FD09E6D52276BF030009D23B /* PinnedSectionHeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedSectionHeaderFooterViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +230,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		053A00A422837E6E00C5D56F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24762F724B06BE6001FEFFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -369,6 +392,24 @@
 			path = CustomCellList;
 			sourceTree = "<group>";
 		};
+		F24762FB24B06BE6001FEFFC /* ModernCollectionViewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F247630624B0701C001FEFFC /* CustomCellList */,
+				F24762FE24B06BE6001FEFFC /* Info.plist */,
+			);
+			path = ModernCollectionViewsTests;
+			sourceTree = "<group>";
+		};
+		F247630624B0701C001FEFFC /* CustomCellList */ = {
+			isa = PBXGroup;
+			children = (
+				F247630424B06C21001FEFFC /* CustomCellListViewControllerTests.swift */,
+				F247630724B07044001FEFFC /* ItemTests.swift */,
+			);
+			path = CustomCellList;
+			sourceTree = "<group>";
+		};
 		FD20C3CE2268DA5200935CB2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -489,6 +530,7 @@
 				FD579749228A2AB500801CBA /* README.md */,
 				FDA8D139225F8531000127E1 /* Modern Collection Views */,
 				053A00A822837E6E00C5D56F /* Modern Collection Views Mac */,
+				F24762FB24B06BE6001FEFFC /* ModernCollectionViewsTests */,
 				FDA8D138225F8531000127E1 /* Products */,
 				FD9671C52268F1FC00301EBB /* Frameworks */,
 				361AC19CC1DAA255EAFCFA95 /* Configuration */,
@@ -501,6 +543,7 @@
 			children = (
 				FDA8D137225F8531000127E1 /* Modern Collection Views.app */,
 				053A00A722837E6E00C5D56F /* Modern Collection Views Mac.app */,
+				F24762FA24B06BE6001FEFFC /* ModernCollectionViewsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -545,6 +588,24 @@
 			productReference = 053A00A722837E6E00C5D56F /* Modern Collection Views Mac.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F24762F924B06BE6001FEFFC /* ModernCollectionViewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F247630324B06BE6001FEFFC /* Build configuration list for PBXNativeTarget "ModernCollectionViewsTests" */;
+			buildPhases = (
+				F24762F624B06BE6001FEFFC /* Sources */,
+				F24762F724B06BE6001FEFFC /* Frameworks */,
+				F24762F824B06BE6001FEFFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F247630024B06BE6001FEFFC /* PBXTargetDependency */,
+			);
+			name = ModernCollectionViewsTests;
+			productName = ModernCollectionViewsTests;
+			productReference = F24762FA24B06BE6001FEFFC /* ModernCollectionViewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FDA8D136225F8531000127E1 /* Modern Collection Views */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDA8D15F225F8533000127E1 /* Build configuration list for PBXNativeTarget "Modern Collection Views" */;
@@ -568,13 +629,17 @@
 		FDA8D12F225F8531000127E1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				DefaultBuildSystemTypeForWorkspace = Original;
-				LastSwiftUpdateCheck = 1100;
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					053A00A622837E6E00C5D56F = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					F24762F924B06BE6001FEFFC = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = FDA8D136225F8531000127E1;
 					};
 					FDA8D136225F8531000127E1 = {
 						CreatedOnToolsVersion = 11.0;
@@ -596,6 +661,7 @@
 			targets = (
 				FDA8D136225F8531000127E1 /* Modern Collection Views */,
 				053A00A622837E6E00C5D56F /* Modern Collection Views Mac */,
+				F24762F924B06BE6001FEFFC /* ModernCollectionViewsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -626,6 +692,13 @@
 				1F368607249854110077BA6A /* InsertionSortWindow.xib in Resources */,
 				1F368602249854110077BA6A /* WiFiSettingsWindow.xib in Resources */,
 				1F368604249854110077BA6A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24762F824B06BE6001FEFFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,6 +743,15 @@
 				05C43D69228A66EA002750F0 /* InsetItemsGridWindowController.swift in Sources */,
 				053A00D622837ED000C5D56F /* ListItem.swift in Sources */,
 				05B367FE22A0D8E800D7A9E0 /* MountainsRawData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24762F624B06BE6001FEFFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F247630824B07044001FEFFC /* ItemTests.swift in Sources */,
+				F247630524B06C21001FEFFC /* CustomCellListViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,6 +810,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F247630024B06BE6001FEFFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDA8D136225F8531000127E1 /* Modern Collection Views */;
+			targetProxy = F24762FF24B06BE6001FEFFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FDA8D13E225F8531000127E1 /* Main.storyboard */ = {
@@ -798,6 +888,46 @@
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F247630124B06BE6001FEFFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				INFOPLIST_FILE = ModernCollectionViewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.ModernCollectionViewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Modern Collection Views.app/Modern Collection Views";
+			};
+			name = Debug;
+		};
+		F247630224B06BE6001FEFFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				INFOPLIST_FILE = ModernCollectionViewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.ModernCollectionViewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Modern Collection Views.app/Modern Collection Views";
 			};
 			name = Release;
 		};
@@ -985,6 +1115,15 @@
 			buildConfigurations = (
 				053A00B222837E6F00C5D56F /* Debug */,
 				053A00B322837E6F00C5D56F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F247630324B06BE6001FEFFC /* Build configuration list for PBXNativeTarget "ModernCollectionViewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F247630124B06BE6001FEFFC /* Debug */,
+				F247630224B06BE6001FEFFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
