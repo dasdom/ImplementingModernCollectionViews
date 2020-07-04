@@ -15,21 +15,24 @@ class CustomListCell: ItemListCell {
                                         categoryLabelTrailing: NSLayoutConstraint,
                                         categoryIconTrailing: NSLayoutConstraint)?
     
-    private func setupViewsIfNeeded() {
-        // We only need to do anything if we haven't already setup the views and created constraints.
-        guard customViewConstraints == nil else { return }
+    override init(frame: CGRect) {
+        
+        super.init(frame: frame)
         
         contentView.addSubview(listContentView)
         contentView.addSubview(categoryLabel)
         contentView.addSubview(categoryIconView)
+        
         listContentView.translatesAutoresizingMaskIntoConstraints = false
         categoryLabel.translatesAutoresizingMaskIntoConstraints = false
         categoryIconView.translatesAutoresizingMaskIntoConstraints = false
+        
         let constraints = (
             categoryLabelLeading: categoryLabel.leadingAnchor.constraint(equalTo: listContentView.trailingAnchor),
             categoryLabelTrailing: categoryIconView.leadingAnchor.constraint(equalTo: categoryLabel.trailingAnchor),
             categoryIconTrailing: contentView.trailingAnchor.constraint(equalTo: categoryIconView.trailingAnchor)
         )
+        
         NSLayoutConstraint.activate([
             listContentView.topAnchor.constraint(equalTo: contentView.topAnchor),
             listContentView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
@@ -40,11 +43,15 @@ class CustomListCell: ItemListCell {
             constraints.categoryLabelTrailing,
             constraints.categoryIconTrailing
         ])
+        
         customViewConstraints = constraints
     }
     
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func updateConfiguration(using state: UICellConfigurationState) {
-        setupViewsIfNeeded()
         
         // Configure the list content configuration and apply that to the list content view.
         var content = defaultListContentConfiguration().updated(for: state)

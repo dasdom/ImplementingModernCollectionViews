@@ -7,9 +7,10 @@ import UIKit
 struct Item: Hashable {
     let category: Category
     let image: UIImage?
-    let title: String?
-    let description: String?
-    init(category: Category, imageName: String? = nil, title: String? = nil, description: String? = nil) {
+    let title: String
+    let description: String
+    
+    init(category: Category, imageName: String? = nil, title: String, description: String) {
         self.category = category
         if let systemName = imageName {
             self.image = UIImage(systemName: systemName)
@@ -19,7 +20,6 @@ struct Item: Hashable {
         self.title = title
         self.description = description
     }
-    private let identifier = UUID()
     
     static let all = [
         Item(category: .music, imageName: "headphones", title: "Headphones",

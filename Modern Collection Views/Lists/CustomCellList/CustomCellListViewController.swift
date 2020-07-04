@@ -18,7 +18,9 @@ class CustomCellListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         navigationItem.title = "List with Custom Cells"
+      
         configureHierarchy()
         configureDataSource()
     }
@@ -38,6 +40,7 @@ extension CustomCellListViewController {
         view.addSubview(collectionView)
         collectionView.delegate = self
     }
+  
     private func configureDataSource() {
         
         let cellRegistration = UICollectionView.CellRegistration<CustomListCell, Item> { (cell, indexPath, item) in
